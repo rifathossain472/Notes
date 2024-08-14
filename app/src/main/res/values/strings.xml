@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Note App</string>
+    <string name="title">Title</string>
+    <string name="start_typing">Start typing</string>
+    <string name="title_goes_here">Title goes here</string>
+    <string name="detail_goes_here">Detail goes here</string>
+</resources>

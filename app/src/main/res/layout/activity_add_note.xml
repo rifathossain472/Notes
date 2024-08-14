@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    tools:context=".views.AddNoteActivity">
+
+    <ImageView
+        android:id="@+id/iv_backArrow"
+        android:layout_width="32dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_back_arrow_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_tick"
+        android:layout_width="32dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="12dp"
+        android:src="@drawable/ic_tick_black_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_share"
+        android:layout_width="32dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/ic_share_black_24"
+        app:layout_constraintEnd_toStartOf="@id/iv_tick"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_title"
+        style="@style/Widget.Material3.TextInputEditText.FilledBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Title"
+        android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
+        android:textColorHint="#A8A5A5"
+        android:textCursorDrawable="@drawable/shape_color_cursor"
+        app:hintAnimationEnabled="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_backArrow" />
+
+
+    <ImageView
+        android:id="@+id/speechToText"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        app:layout_constraintTop_toTopOf="@id/et_title"
+        app:layout_constraintBottom_toBottomOf="@id/et_title"
+        app:layout_constraintEnd_toEndOf="@id/et_title"
+        android:src="@drawable/baseline_mic_24"
+        android:layout_marginEnd="16dp"/>
+
+    <TextView
+        android:id="@+id/tv_date_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_title"
+        android:text="30 February 03.25 PM"
+        android:layout_marginStart="16dp"
+        android:textColor="#7C7676"/>
+
+    <EditText
+        android:id="@+id/et_details"
+        style="@style/Widget.Material3.TextInputEditText.FilledBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:hint="Start Typing"
+        android:inputType="textMultiLine"
+        android:lines="100"
+        android:scrollbars="vertical"
+        android:textColorHint="#A8A5A5"
+        android:textCursorDrawable="@drawable/shape_color_cursor"
+        app:hintAnimationEnabled="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_date_time" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
