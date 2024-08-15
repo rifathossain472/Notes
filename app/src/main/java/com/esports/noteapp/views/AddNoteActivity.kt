@@ -61,15 +61,7 @@ class AddNoteActivity : AppCompatActivity() {
                 binding.etTitle.text = speechText[0]
             }
         }
-
-
-
-
-
-
-
-
-
+//gfdfgfd
         val db = Room.databaseBuilder(
             applicationContext,
             NoteDatabase::class.java,
